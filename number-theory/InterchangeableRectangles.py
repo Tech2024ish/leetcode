@@ -6,6 +6,7 @@ from typing import List
 class Solution:
     def interchangeableRectangles(self, rectangles: List[List[int]]) -> int:
         ratio_count = defaultdict(int)
+
         for w, h in rectangles:
             g = gcd(w, h)
             ratio_count[(w // g, h // g)] += 1
