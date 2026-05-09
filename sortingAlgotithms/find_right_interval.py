@@ -12,16 +12,16 @@ class Solution:
         for interval in intervals:
             end = interval[1]
 
-            lo, hi = 0, len(starts)
-            while lo < hi:
-                mid = (lo + hi) // 2
+            low, high = 0, len(starts)
+            while low < high:
+                mid = (low + high) // 2
                 if starts[mid] >= end:
-                    hi = mid
+                    high = mid
                 else:
-                    lo = mid + 1
+                    low = mid + 1
 
-            if lo < len(starts):
-                result.append(start_map[lo][1])
+            if low < len(starts):
+                result.append(start_map[low][1])
             else:
                 result.append(-1)
 
