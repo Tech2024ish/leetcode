@@ -9,9 +9,3 @@ class Solution:
                 nums[k] = nums[i]
                 k += 1
         return k
-
-
-nums = [3, 2, 2, 3]
-val = 3
-s = Solution()
-print(s.removeElement(nums, val))
