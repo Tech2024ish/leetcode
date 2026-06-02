@@ -21,8 +21,3 @@ class Solution:
                 pair_first = not pair_first
                 count[i] -= 1
         return tot
-
-
-nums = [1, 4, 3, 2]
-s = Solution()
-print(s.arrayPairSum(nums))
